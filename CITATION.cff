@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "evalframe"
+abstract: "Lightweight evaluation framework for LLM outputs."
+authors:
+  - family-names: "Deshmukh"
+    given-names: "Vaibhav"
+version: "0.1.0"
+date-released: "2026-04-25"
+license: MIT
+repository-code: "https://github.com/vdeshmukh203/evalframe"
+keywords:
+  - python
+  - large-language-models
+  - evaluation
+  - nlp
+  - metrics
