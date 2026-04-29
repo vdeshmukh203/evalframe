@@ -4,11 +4,21 @@ build-backend = "hatchling.build"
 
 [project]
 name = "evalframe"
-version = "0.1.0"
+version = "0.2.0"
 description = "Lightweight evaluation framework for LLM outputs"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.9"
 
+[project.optional-dependencies]
+gui = ["gradio>=4.0"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+evalframe-gui = "evalframe.app:launch"
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/evalframe"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
