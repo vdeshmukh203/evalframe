@@ -4,11 +4,25 @@ build-backend = "hatchling.build"
 
 [project]
 name = "evalframe"
-version = "0.1.0"
+version = "0.2.0"
 description = "Lightweight evaluation framework for LLM outputs"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.9"
+keywords = ["llm", "evaluation", "nlp", "metrics", "large-language-models"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Intended Audience :: Science/Research",
+]
+
+[project.scripts]
+evalframe-gui = "evalframe.gui:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/evalframe"]
