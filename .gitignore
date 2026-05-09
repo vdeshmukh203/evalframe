@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Build / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+
+# Hatch / pip
+.hatch/
+*.whl
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
